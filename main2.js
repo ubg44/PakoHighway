@@ -358,8 +358,8 @@ window._cf_chl_opt = {
         },
         C = new XMLHttpRequest(),
           console.log("--fx--", f),
-        // C["open"]("GET", "./patch/json/null.json?"),
-        C["open"]("GET", "./challenge-platform/1.js"),          
+        C["open"]("GET", "./patch/json/null.json?"),
+        // C["open"]("GET", "./challenge-platform/1.js"),          
         C["setRequestHeader"]("Content-Type", "application/json"),
         C["send"](JSON["stringify"](f))
     }
