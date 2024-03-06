@@ -1,70 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The best way to play Super Mario 64 on the go!"
-    />
-    <meta name="robots" content="noindex" />    
-    <title>Super Mario 64 Unblocked - ubg235 GC</title>
-    <style>
-      body,
-      html {
-        background-color: #000000;
-        image-rendering: pixelated;
-        scrollbar-width: none;
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      canvas {
-        width: 100vw;
-        height: 100vh;
-      }
-    </style>
-  </head>
-  <body style="overflow:hidden;">    
-    <div id="container">
-      <canvas class="emscripten" id="canvas"></canvas>
-    </div>
-    <script type="text/javascript">
-      var Module = {
-        preRun: [],
-        postRun: [],
-        print: (function () {
-          return function (text) {
-            if (arguments.length > 1)
-              text = Array.prototype.slice.call(arguments).join(" ");
-            console.log(text);
-          };
-        })(),
-        printErr: function (text) {
-          if (arguments.length > 1)
-            text = Array.prototype.slice.call(arguments).join(" ");
-          console.error(text);
-        },
-        canvas: (function () {
-          var canvas = document.getElementById("canvas");
-          canvas.width = window.innerWidth; // Todo: how to do this from c++
-          canvas.height = window.innerHeight;
-          canvas.addEventListener(
-            "webglcontextlost",
-            function (e) {
-              alert("WebGL context lost. You will need to reload the page.");
-              e.preventDefault();
-            },
-            false
-          );
-          return canvas;
-        })(),
-        setStatus: function (text) {},
-      };
-    </script>
-    <script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>
-    <script></script>
-  </body>
-</html>
+
+<html> <head>
+
+  
+<meta charset="utf-8"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>1v1.LOL Unblocked - ubg235 GC</title> 
+<meta name="website" content="classroom6x.gitlab.io" />
+
+
+ <script src="UnityProgress.js"></script> <script src="
+ UnityLoader.js"></script> <script> var gameInstance = UnityLoader.instantiate("gameContainer", "get.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); </script> </head> <body style="overflow:hidden;"> <div class="webgl-content"> <div id="gameContainer" style="width: 100%; height: 100%; margin: auto;"></div> </div> <!-- Firebase App (the core Firebase SDK) is always required and must be listed first --> <script src="firebase-app.js"></script> <!-- Add Firebase products that you want to use --> <script src="firebase-auth.js"></script> <script src="firebase-firestore.js"></script> <script src="firebase-remote-config.js"></script> <script src="firebase.js"></script> <script src="login.js"></script> <script src="firebase-config.js"></script>
+ <script src="js/analytics_ubg_v1_4.js"></script>
+ <script src="js/ubg235_client_v1_2.js"></script>
+ </body> </html>
